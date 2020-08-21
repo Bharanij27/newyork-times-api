@@ -93,20 +93,22 @@ function createCard(news) {
 
     let byline = createTag('p', 'byline', news.byline);
 
-    let upadteDate = new Date(news.updated_date)
-    let dateText = upadteDate.getDate() + ' ' +
-        months[upadteDate.getMonth()]
+    let createdDate = new Date(news.created_date)
+    let dateText = createdDate.getDate() + ' ' +
+        months[createdDate.getMonth()]
 
     let dateCard = createTag('p', 'dateCard', dateText);
 
     let abstractcard = createTag('p', 'abstractcard', news.abstract);
+
+    let item_type = createTag('p', 'item_type', news.item_type);
 
     let continueRead = document.createElement('a');
     continueRead.setAttribute('href', news.short_url)
     continueRead.classList.add('continueReading');
     continueRead.innerText = 'Continue Reading';
 
-    body.append(sectioncard, titlecard, byline, dateCard, abstractcard, continueRead);
+    body.append(sectioncard, titlecard, byline, dateCard, abstractcard, item_type, continueRead);
     leftPart.append(body)
 
     let rightPart = document.createElement('div');
