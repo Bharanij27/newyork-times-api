@@ -1,0 +1,46 @@
+.heading {
+  font-size: 30px;
+  display: flex;
+  font-family: fantasy;
+}
+
+.margin-line {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0px !important;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+li a {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: grey !important;
+}
+
+.selected {
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #007bff;
+}
+
+li.selected a {
+  color: black !important;
+}
+
+.card-image-height{
+    height: 250px !important;
+}
+
+.border-card {
+  border-bottom: 1px solid;
+  box-shadow: 1px 3px 3px 3px #888888;
+}
+
+.card-body p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 0px;
+}
