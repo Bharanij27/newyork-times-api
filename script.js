@@ -108,7 +108,7 @@ function createCard(news) {
     continueRead.classList.add('continueReading');
     continueRead.innerText = 'Continue Reading';
 
-    body.append(sectioncard, titlecard, byline, dateCard, abstractcard, item_type, continueRead);
+    body.append(sectioncard, titlecard, item_type, byline, dateCard, abstractcard, continueRead);
     leftPart.append(body)
 
     let rightPart = document.createElement('div');
